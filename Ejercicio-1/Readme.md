@@ -1,5 +1,5 @@
-# Mezcla y ordena listas
-## Tema: Listas
+# Pares y posición
+### Tema Listas
 
 Modifica el siguiente código:
 
@@ -13,48 +13,31 @@ if __name__ == '__main__':
 
 La línea `#escribe tu código abajo de esta línea` es un comentario, el programa la va a ignorar al ejecutarse.
 
-Desarrolla un programa que permita obtener una lista ordenada de menor a mayor a partir de dos listas. Los valores individuales de las listas de entrada los captura el usuario uno por uno y posteriormente se unen ambas listas para obtener una sola lista ordenada de menor a mayor.
+Escribe un programa que primero lea la cantidad de elementos que vas a ingresar en la lista y después acepte cada uno de los elementos. Todos los datos que se ingresan deben ser números enteros.
+Posteriormente, el programa debe revisar la lista, y para cada uno de los valores pares que encuentre mostrar un mensaje con la posición y el valor del número par usando un formato que se describe más adelante.
 
-## Entradas
-Cero o más valores enteros, uno en cada renglón por cada lista. Finaliza la captura de cada lista individual con un *.
+## Entrada
+Un número entero que representa la cantidad de valores que tiene la lista, asi como cada uno de los valores de la lista.
 
-## Salidas
-Se despliegan las dos listas iniciales y la lista final ordenada con el siguiente formato mostrado en el ejemplo.
-
-## Ejemplo de ejecución del programa
+## Salida
+Un mensaje para cada uno de los números pares encontrados en la lista. El mensaje debe tener el formato:
+```
+pos XX, valor XX
+```
+Observa que va la palabra ``pos`` seguida de un ``número``, después una ``coma``, un `espacio`, luego la palabra ``valor`` y luego otro ``número``. 
+ 
+## Ejemplo de ejecución del programa:
 ### Entrada
 ```
->>>3
+>>>5
 >>>1
+>>>2
+>>>3
 >>>4
 >>>5
->>>*
->>>2
->>>9
->>>6
->>>1
->>>3
->>>*
 ```
 ### Salida
 ```
-L1=
-[3, 1, 4, 5]
-L2=
-[2, 9, 6, 1, 3]
-LORDENADA=
-[1, 1, 2, 3, 3, 4, 5, 6, 9]
-```
-### Entrada
-```
->>> *
->>> *
-```
-### Salida
-```
-L1=
-[]
-L2=
-LORDENADA=
-[]
+pos 1, valor 2
+pos 3, valor 4
 ```
